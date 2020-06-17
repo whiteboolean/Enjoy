@@ -5,9 +5,7 @@ public class Fanxing {
 
     }
 
-    static class Apple extends Fruit {
-
-    }
+    static class Apple extends Fruit { }
 
     static class Plate<T> {
         private T item;
