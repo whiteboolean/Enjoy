@@ -1,2 +1,4 @@
+include ':day0616_derry_kotlin'
 rootProject.name='Enjoy'
 include ':app'
+include ':compiler'
