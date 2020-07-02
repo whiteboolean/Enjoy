@@ -2,25 +2,23 @@ package com.example.enjoy.rxjava_derry;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.enjoy.R;
-import com.example.enjoy.databinding.ActivityMain3Binding;
-import com.example.enjoy.rxjava_derry.day01.Main3Activity;
 import com.example.enjoy.rxjava_derry.day01.bean.LoginBean;
 import com.example.enjoy.rxjava_derry.day01.use.NetService;
-import com.example.enjoy.rxjava_derry.day01.use.PageBean;
 import com.example.enjoy.rxjava_derry.day01.use.PageItemBean;
 import com.example.enjoy.rxjava_derry.day01.use.ProjectBean;
 import com.example.enjoy.rxjava_derry.day01.use.WanAndroidApi;
 import com.example.enjoy.rxjava_derry.day01.utils.HttpUtils;
 import com.jakewharton.rxbinding2.view.RxView;
 
-import java.net.HttpURLConnection;
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
@@ -31,7 +29,6 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
-import okhttp3.OkHttpClient;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -137,13 +134,13 @@ public class Main2Activity extends AppCompatActivity {
 
                     }
                 }).isDisposed();
-//        button3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                getProjectAction();
-//                getItemAction();
-//            }
-//        });
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                getProjectAction();
+                getItemAction();
+            }
+        });
 
 
     }
@@ -176,6 +173,11 @@ public class Main2Activity extends AppCompatActivity {
                     }
                 }).isDisposed();
         }
+
+
+    private float dp2px(int dp) {
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, Resources.getSystem().getDisplayMetrics());
+    }
 }
 
 

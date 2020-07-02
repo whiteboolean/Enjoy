@@ -38,9 +38,11 @@ task clean(type: Delete) {
 }
 
 
-project.ext {
+ext {
     compileSdkVersion = 28
     retrofitVersion = "2.4.0"
     gsonVersion = "2.8.2"
     cookieVersion = "v1.0.1"
+    jetbrainsKotlinVersion= '1.3.72'
+    jetbrainsCouroutinesVersion = "1.3.0-M2"
 }

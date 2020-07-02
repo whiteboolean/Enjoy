@@ -1,5 +1,8 @@
 package com.example.enjoy.rxjava_derry.day0616_kotlin_derry.java;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Fanxing {
     static class Fruit {//水果类
 
@@ -43,9 +46,17 @@ public class Fanxing {
 //        Apple apple = plate3.get();
         plate3.set(new Apple());
 
+        List<String> a = new ArrayList<>();
+        List<String> a1 = new ArrayList<>();
+        List<String> a32 = new ArrayList<>();
+        List<String> a4 = new ArrayList<>();
+        List<String> a5 = new ArrayList<>();
+        List<String> a6 = new ArrayList<>();
+
 
         //PECS 原则
-        //Producer extends Consumer super
+        //Producer extends
+        // Consumer super
         //
 
 

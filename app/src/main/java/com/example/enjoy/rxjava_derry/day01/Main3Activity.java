@@ -410,7 +410,7 @@ public class Main3Activity extends AppCompatActivity {
 //                })
 //                .subscribeOn(Schedulers.io())
 ////                .observeOn(AndroidSchedulers.mainThread())
-                .compose(Main3Activity.<Bitmap>rxud())
+                .compose(Main3Activity.rxud())
                 //终点
                 .subscribe(new Observer<Bitmap>() {
                     //订阅开始

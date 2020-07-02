@@ -5,6 +5,12 @@ import kotlin.concurrent.fixedRateTimer
 const val a = 1
 
 
+fun main(){
+
+    //1.var和val
+
+}
+
 class Test {
 
     var a = 1
@@ -24,6 +30,7 @@ class Test {
         var c = "aaa"
         var d = true
         var e = a.plus(b)
+
 
         var f = "111"
         var g = "123"
@@ -80,6 +87,8 @@ class Test {
 
 
     }
+
+
 
 
     private fun test1(str: String?): Int {

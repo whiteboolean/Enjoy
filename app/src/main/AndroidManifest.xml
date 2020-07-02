@@ -11,14 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".rxjava_derry.day01.MainActivity"></activity>
-        <activity android:name=".rxjava_derry.day01.Main3Activity">
+
+        <activity android:name=".rxjava_derry.day0619_annotation_lance.MainActivity2" />
+        <activity android:name=".rxjava_derry.day0629_zero.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".rxjava_derry.day01.MainActivity" />
     </application>
 
 </manifest>
