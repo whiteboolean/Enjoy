@@ -24,6 +24,10 @@ constructor(context: Context,
     private lateinit var allLines: MutableList<MutableList<View>>
     private lateinit var lineHeights: MutableList<Int>
 
+    init {
+        initView()
+    }
+
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         initView()
         var lineViews = mutableListOf<View>()
@@ -86,22 +90,24 @@ constructor(context: Context,
         val realHeight = if (heightMode == MeasureSpec.EXACTLY) selfHeight else parentNeededHeight
 
 
+        Log.d(TAG, "onMeasure: width:${realWidth}  realHeight:${realHeight}")
         setMeasuredDimension(realWidth, realHeight)
     }
 
     private fun initView() {
         allLines = mutableListOf()
         lineHeights = mutableListOf()
+        Log.d(TAG, "initView: dddddddddddddddd")
     }
 
     override fun onLayout(changed: Boolean, l: Int, t: Int, r: Int, b: Int) {
-
         val lineCount = allLines.size
 
         //1.拿到当前viewGroup的paddingTop和paddingLeft
         var curL = paddingLeft
         var curT = paddingTop
 
+        Log.d(TAG, "onLayout: dddddddddddd alllines:${allLines.size}")
         for (i in 0 until lineCount) {
             val mutableList = allLines[i]
             val lineHeight = lineHeights[i]
