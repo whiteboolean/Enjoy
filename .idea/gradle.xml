@@ -15,7 +15,9 @@
             <option value="$PROJECT_DIR$/compiler" />
             <option value="$PROJECT_DIR$/day0616_derry_kotlin" />
             <option value="$PROJECT_DIR$/july_myview" />
+            <option value="$PROJECT_DIR$/lib" />
             <option value="$PROJECT_DIR$/mylibrary" />
+            <option value="$PROJECT_DIR$/net_work_base" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

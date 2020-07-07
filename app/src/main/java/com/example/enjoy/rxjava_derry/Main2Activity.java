@@ -17,8 +17,13 @@ import com.example.enjoy.rxjava_derry.day01.use.PageItemBean;
 import com.example.enjoy.rxjava_derry.day01.use.ProjectBean;
 import com.example.enjoy.rxjava_derry.day01.use.WanAndroidApi;
 import com.example.enjoy.rxjava_derry.day01.utils.HttpUtils;
+import com.example.enjoy.rxjava_derry.day0616_generic_mark.ArrayAlg;
 import com.jakewharton.rxbinding2.view.RxView;
 
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
@@ -177,6 +182,29 @@ public class Main2Activity extends AppCompatActivity {
 
     private float dp2px(int dp) {
         return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, Resources.getSystem().getDisplayMetrics());
+    }
+
+
+    List<List<String>> lists = new ArrayList<>();
+    @Test
+    public void test1(){
+
+        List<String> list = new ArrayList<>();
+        list.add("123123");
+        list.add("123123");
+        list.add("123123");
+        list.add("123123");
+        list.add("123123");
+
+        lists.add(list);
+        System.out.println(lists.size());
+
+        list.clear();
+
+        System.out.println(lists.size());
+
+
+
     }
 }
 

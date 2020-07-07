@@ -11,7 +11,6 @@ constructor(context: Context,
             attributeSet: AttributeSet? = null,
             defStyleAttr: Int = 0) : ViewGroup(context, attributeSet, defStyleAttr) {
 
-
     val OFFSET = 100
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
@@ -28,7 +27,7 @@ constructor(context: Context,
         for (i in 0 until childCount) {
             val child = getChildAt(i)
             val layoutParams = child.layoutParams
-            //适配zi
+            //适配子View的padding和margin
             val childWidthSpec = getChildMeasureSpec(widthMeasureSpec, paddingLeft + paddingRight, layoutParams.width)
             val childHeightSpec = getChildMeasureSpec(heightMeasureSpec, paddingTop + paddingBottom, layoutParams.height)
             child.measure(childWidthSpec, childHeightSpec)
@@ -82,5 +81,12 @@ constructor(context: Context,
         }
 
 
+    }
+
+
+
+
+    override fun checkLayoutParams(p: LayoutParams?): Boolean {
+        return super.checkLayoutParams(p)
     }
 }

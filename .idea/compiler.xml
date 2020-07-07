@@ -4,6 +4,7 @@
     <bytecodeTargetLevel>
       <module name="compiler" target="1.7" />
       <module name="day0616_derry_kotlin" target="1.7" />
+      <module name="lib" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

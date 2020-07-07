@@ -16,12 +16,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
-        dataBinding {
-            enabled = true
-        }
-
-        viewBinding{
-            enabled = true
+        buildFeatures{
+            dataBinding = true
+            viewBinding = true
         }
     }
 
@@ -46,5 +43,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     api project(":july_myview")
+    api project(":net_work_base")
 
 }

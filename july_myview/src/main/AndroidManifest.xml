@@ -9,7 +9,7 @@
         <activity android:name=".what_is_view.MainActivity">
 
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".what_is_view.DemoActivity1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

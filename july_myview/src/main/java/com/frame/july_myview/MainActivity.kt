@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Message
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.random.Random
 
@@ -35,12 +36,14 @@ class MainActivity : AppCompatActivity(), Handler.Callback {
 //        animator.start()
 
 
-        Int.MAX_VALUE
+//        Int.MAX_VALUE
+//
+//        handler = Handler(this)
+//        tv.setOnClickListener {
+//            handler.sendEmptyMessage(0)
+//        }
 
-        handler = Handler(this)
-        tv.setOnClickListener {
-            handler.sendEmptyMessage(0)
-        }
+
 
     }
 

@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.frame.net_work_base">
+
+
+    <application>
+        <activity android:name=".A" />
+    </application>
+</manifest>

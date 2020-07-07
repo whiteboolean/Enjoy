@@ -1,3 +1,5 @@
+include ':lib'
+include ':net_work_base'
 include ':july_myview'
 include ':mylibrary'
 include ':day0616_derry_kotlin'
