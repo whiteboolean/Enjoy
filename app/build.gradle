@@ -44,5 +44,11 @@ dependencies {
 
     api project(":july_myview")
     api project(":net_work_base")
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
 }

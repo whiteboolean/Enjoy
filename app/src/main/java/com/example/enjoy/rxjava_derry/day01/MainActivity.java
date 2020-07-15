@@ -1,33 +1,44 @@
 package com.example.enjoy.rxjava_derry.day01;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatSeekBar;
 
 import android.os.Bundle;
-import android.view.View;
+import android.widget.SeekBar;
 
 import com.example.enjoy.R;
+import com.frame.july_myview.zero_custom_view.MyTextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private  View view;
-    private  View view1;
-    private  View view2;
-    private  View view3;
-    private  View view4;
-    private  View view5;
-    private  View view6;
-    private  View view7;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
-        view = new View(this);
-        view1 = new View(this);
-        view2 = new View(this);
-        view3 = new View(this);
-        view4 = new View(this);
-        view5 = new View(this);
-        view6 = new View(this);
-        view7 = new View(this);
+        setContentView(R.layout.activity_main9);
+        MyTextView viewById = findViewById(R.id.myTextView);
+
+        AppCompatSeekBar seekBar = findViewById(R.id.seekBar);
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+
+                float percent = Float.parseFloat(String.valueOf(progress)) / 100;
+
+                System.out.println("percent:"+percent);
+                viewById.setPercents(percent);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
     }
 }

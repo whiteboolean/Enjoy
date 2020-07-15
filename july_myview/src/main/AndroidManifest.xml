@@ -6,9 +6,8 @@
         android:allowBackup="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".what_is_view.MainActivity">
-
-        </activity>
+        <activity android:name=".zero_custom_view.MainActivity"></activity>
+        <activity android:name=".what_is_view.MainActivity"></activity>
         <activity android:name=".what_is_view.DemoActivity1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
