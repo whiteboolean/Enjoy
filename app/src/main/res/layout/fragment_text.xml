@@ -11,14 +11,28 @@
         android:layout_width="0dp"
         android:layout_height="89dp"
         android:layout_marginStart="115dp"
-        android:layout_marginTop="321dp"
         android:layout_marginEnd="116dp"
-        android:layout_marginBottom="321dp"
         android:gravity="center"
         android:text="TextView"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="172dp"
+        android:layout_height="87dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

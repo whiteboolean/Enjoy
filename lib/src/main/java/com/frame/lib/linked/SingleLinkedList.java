@@ -18,7 +18,7 @@ public class SingleLinkedList {
             temp = temp.next;
         }
         //当退出while循环时，temp就指向了链表的最后
-        //将最后这个
+        //将最后这个的下一个指向新加入的节点
         temp.next = heroNode;
 
     }
@@ -183,13 +183,16 @@ class SingleLinkedListDemo {
     //查找单链表中的倒数第K个节点[新浪面试题]
     public static HeroNode findLastIndexNode(HeroNode head, int index) {
         if (head.next == null) {
-            return null;
+            return null; //没有找到
         }
 
+        //第一次遍历得到链表的长度(节点个数)
         int size = getLength(head);
         if (index <= 0 || index > size) {
             return null;
         }
+
+        //第二次遍历 size - index 位置，就是我们倒数的第K个节点
         HeroNode cur = head.next;
         for (int i = 0; i < size - index; i++) {
             cur = cur.next;
